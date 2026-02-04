@@ -9,10 +9,10 @@ from langgraph.graph import END, StateGraph
 from langgraph.prebuilt import ToolNode
 
 from react_agent.state import AgentState
-from react_agent.tools import calculator, search_web
+from react_agent.tools import calculator, get_current_time, search_web
 
 # Define available tools
-tools = [search_web, calculator]
+tools = [search_web, calculator, get_current_time]
 
 
 def create_llm() -> ChatGoogleGenerativeAI:
